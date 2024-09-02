@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Doll Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.svg" alt="Pop Doll Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#create">Create Your Doll</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Pop Doll Creator</h1>
+            <p>Create your own personalized Pop Doll with a click!</p>
+            <a href="#create" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Choose a Doll</h3>
+                <p>Select your favorite Pop Doll base from our gallery.</p>
+            </div>
+            <div class="step">
+                <h3>2. Upload Your Image</h3>
+                <p>Upload a photo of your face to place on the doll.</p>
+            </div>
+            <div class="step">
+                <h3>3. Customize & Download</h3>
+                <p>Customize your doll and download the final image.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Pop Doll Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="pop-dall.png" alt="Doll 1">
+                <p>Doll 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pop_dall.png" alt="Doll 2">
+                <p>Doll 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pop-dall.png" alt="Doll 3">
+                <p>Doll 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pop_dall.png" alt="Doll 4">
+                <p>Doll 4</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="create">
+        <h2>Create Your Pop Doll</h2>
+        <div class="upload-container">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="doll-container">
+            <div class="doll">
+                <img id="dollImage" src="pop-dall.png" alt="Pop Doll">
+                <img id="userImage" style="display: none;" alt="Your Face">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="logo.svg" alt="Pop Doll Logo" class="footer-logo">
+            <p>© 2024 Pop Doll Creator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

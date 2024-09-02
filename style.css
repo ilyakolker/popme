@@ -1,0 +1,307 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Layout and responsiveness */
+body {
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Header and Navbar */
+header {
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    width: 60px;
+    transition: transform 0.3s;
+}
+
+header .logo:hover {
+    transform: rotate(360deg);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    color: #f1c40f;
+    background-color: rgba(241, 196, 15, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffcccb;
+    padding: 150px 20px;
+    color: white;
+    background-image: url('pop-dall.png'); /* Add a relevant background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+/* How It Works Section */
+#how-it-works {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+#how-it-works h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.step {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.333% - 30px);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.step h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+}
+
+.step p {
+    font-size: 1.1em;
+    color: #666666;
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+}
+
+#gallery h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #1f1f1f;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333333;
+}
+
+/* Create Your Pop Doll Section */
+#create {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#create h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.upload-container {
+    margin-bottom: 20px;
+}
+
+.upload-container input[type="file"] {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #ff5c5c;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.upload-container input[type="file"]:hover {
+    background-color: #ff5c5c;
+    color: white;
+}
+
+.upload-container button {
+    margin-top: 20px;
+    background-color: #ff5c5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-container button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+/* Doll Container */
+.doll-container {
+    margin-top: 30px;
+}
+
+.doll {
+    position: relative;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.doll img {
+    width: 100%;
+    height: auto;
+}
+
+#userImage {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.footer-logo:hover {
+    transform: rotate(360deg);
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Center-align headers in sections */
+#how-it-works h2,
+#gallery h2,
+#create h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
